@@ -12,6 +12,7 @@ function startGame() {
             let elem = $(".mole").get()[Math.trunc(Math.random() * $(".mole").get().length)];
             if(!$(elem).attr("class").includes("active")){
                 $(elem).addClass("active");
+                $(elem).addClass("up");
                 $(elem).animate({
                     top: "20%",
                 }, time)
